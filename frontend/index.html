@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LakshmanRekha WAF Operations Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>🛡️ LakshmanRekha WAF Control Center</h2>
+
+    <div class="flex-container">
+        <div class="metric-card">
+            <h3>Total Intrusions Stopped</h3>
+            <div class="metric-num" id="attacks-count">0</div>
+        </div>
+        <div class="metric-card">
+            <h3>Active Blacklisted IPs</h3>
+            <div class="metric-num" id="blocked-count" style="color:#ef4444;">0</div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>IP Address</th>
+                <th>Classification</th>
+                <th>Payload Sample</th>
+                <th>Mitigation Control</th>
+            </tr>
+        </thead>
+        <tbody id="logs-table-body">
+            <!-- Populated via asynchronous fetch loop scripts -->
+        </tbody>
+    </table>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

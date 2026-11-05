@@ -1,4 +1,4 @@
-const API_URL = 'http://[YOUR_WSL_IP]:8000/api';
+const API_URL = 'http://localhost:8000/api';
 
 
 async function fetchMetricsTimeline() {
